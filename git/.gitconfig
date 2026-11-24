@@ -1,0 +1,11 @@
+[user]
+	name = Célia Larousse
+	email = 131279955+Celialarousse@users.noreply.github.com
+[core]
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+	editor = code --wait
+	autocrlf = input
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
