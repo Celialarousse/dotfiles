@@ -19,3 +19,6 @@ function maj {
   winget upgrade --all --accept-source-agreements
   Write-Host "`n== Terminé ! ==" -ForegroundColor Green
 }
+
+# Sauvegarder toutes les bases de données
+function sauvegarde-bdd { & C:\dev\perso\dotfiles\sauvegarder-bdd.ps1 }
