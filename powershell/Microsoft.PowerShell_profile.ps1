@@ -22,3 +22,7 @@ function maj {
 
 # Sauvegarder toutes les bases de données
 function sauvegarde-bdd { & C:\dev\perso\dotfiles\sauvegarder-bdd.ps1 }
+
+# Activer / désactiver Xdebug (à lancer dans le dossier d'un projet symfony-docker)
+function xdebug-on  { $env:XDEBUG_MODE = 'debug'; docker compose up -d --wait --wait-timeout 300; Remove-Item Env:XDEBUG_MODE }
+function xdebug-off { docker compose up -d --wait --wait-timeout 300 }
